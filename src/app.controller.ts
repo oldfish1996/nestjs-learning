@@ -1,0 +1,17 @@
+import { Controller, Get, Headers } from '@nestjs/common';
+import { AppService } from './app.service';
+
+@Controller()
+export class AppController {
+  constructor(private readonly appService: AppService) {}
+
+  @Get()
+  getHello() {
+    return this.appService.getHello();
+  }
+
+  @Get('health')
+  getHealth(@Headers('user-agent') userAgent?: string) {
+    return this.appService.getHealth(userAgent);
+  }
+}
