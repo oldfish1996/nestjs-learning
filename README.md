@@ -1,5 +1,7 @@
 # NestJS Learning
 
+> 参考文档 https://my.feishu.cn/wiki/IET2wHzraiqvD6k6fn8cRbz3nDb
+
 这是一个按学习周组织的 NestJS 教学项目。当前已完成第一周代码：理解项目入口、模块、控制器、服务，以及用内存数组实现基础 REST API。
 
 ## 当前进度
