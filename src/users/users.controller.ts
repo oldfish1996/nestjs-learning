@@ -6,16 +6,24 @@ import { CreateUserBody, UpdateUserBody } from './users.types';
 export class UsersController {
   constructor(private readonly usersService: UsersService) {}
 
+  // query访问 通过 /users?keyword=xxx
   @Get()
   findAll(@Query('keyword') keyword?: string) {
     return this.usersService.findAll(keyword);
   }
 
+  // url param 也就是通过 /users/1 访问
   @Get(':id')
   findOne(@Param('id') id: string) {
     return this.usersService.findOne(Number(id));
   }
 
+  // DTO data transfer object
+  /**
+   * curl -X POST http://localhost:3000/users \
+   * -H "Content-Type: application/x-www-form-urlencoded" \
+   * -d "name=Charlie&age=25"
+   */
   @Post()
   create(@Body() body: CreateUserBody) {
     return this.usersService.create(body);

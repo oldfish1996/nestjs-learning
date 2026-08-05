@@ -15,7 +15,14 @@ import { CommonModule } from "./common/common.module";
     ConfigModule,
     CommonModule,
   ],
-  controllers: [AppController],
-  providers: [AppService],
+  controllers: [AppController], // 控制器，只能被注入
+  // providers: [AppService], // 可以被注入，也能注入到其他对象
+  providers: [
+    // AppService, // 简写
+    {
+      provide: "app-service", // 指定token
+      useClass: AppService,
+    }
+  ],
 })
 export class AppModule {}

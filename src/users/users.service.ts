@@ -1,13 +1,17 @@
-import { BadRequestException, Injectable, NotFoundException } from '@nestjs/common';
-import { CreateUserBody, UpdateUserBody, User } from './users.types';
+import {
+  BadRequestException,
+  Injectable,
+  NotFoundException,
+} from "@nestjs/common";
+import { CreateUserBody, UpdateUserBody, User } from "./users.types";
 
 @Injectable()
 export class UsersService {
   private nextId = 3;
 
   private users: User[] = [
-    { id: 1, name: 'Alice', age: 20 },
-    { id: 2, name: 'Bob', age: 22 },
+    { id: 1, name: "Alice", age: 20 },
+    { id: 2, name: "Bob", age: 22 },
   ];
 
   findAll(keyword?: string) {
@@ -17,7 +21,9 @@ export class UsersService {
 
     const normalizedKeyword = keyword.trim().toLowerCase();
 
-    return this.users.filter((user) => user.name.toLowerCase().includes(normalizedKeyword));
+    return this.users.filter((user) =>
+      user.name.toLowerCase().includes(normalizedKeyword),
+    );
   }
 
   findOne(id: number) {
@@ -69,7 +75,7 @@ export class UsersService {
 
   private assertValidId(id: number) {
     if (!Number.isInteger(id) || id <= 0) {
-      throw new BadRequestException('User id must be a positive integer');
+      throw new BadRequestException("User id must be a positive integer");
     }
   }
 }
