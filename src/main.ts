@@ -19,9 +19,9 @@ async function bootstrap() {
   );
 
   app.use(function (req: Request, res: Response, next: NextFunction) {
-    console.log(chalk.bgCyan("[middleware] before"), req.url);
+    // console.log(chalk.bgCyan("[middleware] before"), req.url);
     next();
-    console.log(chalk.bgMagenta("[middleware] after"));
+    // console.log(chalk.bgMagenta("[middleware] after"));
   });
 
   // 访问路径为 localhost:3000/static
