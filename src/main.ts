@@ -4,9 +4,19 @@ import { NestExpressApplication } from "@nestjs/platform-express";
 import { Request, Response, NextFunction } from "express";
 import chalk from "chalk";
 import { LoginGuard } from "./login.guard";
+import * as session from "express-session";
 
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
+
+  app.use(
+    session({
+      secret: "chenys",
+      cookie: {
+        maxAge: 100000,
+      },
+    }),
+  );
 
   app.use(function (req: Request, res: Response, next: NextFunction) {
     console.log(chalk.bgCyan("[middleware] before"), req.url);

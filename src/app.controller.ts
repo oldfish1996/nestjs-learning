@@ -3,6 +3,7 @@ import {
   Get,
   Headers,
   Inject,
+  Ip,
   Query,
   UseFilters,
   UseGuards,
@@ -57,5 +58,19 @@ export class AppController {
   @UseFilters(TestFilter)
   ccc(@Query("num", ValidatePipe) num: number) {
     return num + 1;
+  }
+
+  @Get("ddd")
+  ddd(
+    @Headers("Accept") accept: string,
+    @Headers() headers: Record<string, any>,
+  ) {
+    console.log(accept, headers);
+    return "ddd";
+  }
+
+  @Get("ip")
+  ip(@Ip() ip: string) {
+    return ip;
   }
 }
