@@ -1,9 +1,15 @@
-import { ArgumentsHost, Catch, ExceptionFilter, BadRequestException } from "@nestjs/common";
+import {
+  ArgumentsHost,
+  Catch,
+  ExceptionFilter,
+  BadRequestException,
+} from "@nestjs/common";
 import { Response } from "express";
 
 @Catch(BadRequestException)
 export class TestFilter implements ExceptionFilter {
   catch(exception: BadRequestException, host: ArgumentsHost) {
+    console.log(exception, host);
     const response: Response = host.switchToHttp().getResponse();
 
     response.status(400).json({

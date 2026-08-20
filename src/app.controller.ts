@@ -23,6 +23,7 @@ import { DddGuard } from "./ddd.guard";
 import { Ddd } from "./ddd.decorator";
 import { create } from "domain";
 import chalk from "chalk";
+import { Roles, Role } from "./roles.decorator";
 
 // 装饰器合并
 export function Union(path: string, role: string) {
@@ -78,6 +79,7 @@ export class AppController {
 
   @Get("aaa")
   @UseGuards(LoginGuard)
+  @Roles(Role.Admin)
   aaa(): string {
     console.log("aaa...");
     return "aaa";
