@@ -14,6 +14,10 @@ import { ConfigModule } from "./config/config.module";
 import { CommonModule } from "./common/common.module";
 import { LogMiddleware } from "./log.middleware";
 import { LoginGuard } from "./login.guard";
+import { MaModule } from './ma/ma.module';
+import { MbModule } from './mb/mb.module';
+import { SaService } from './sa.service';
+import { SbService } from './sb.service';
 
 @Module({
   imports: [
@@ -22,11 +26,15 @@ import { LoginGuard } from "./login.guard";
     NotesModule,
     ConfigModule,
     CommonModule,
+    MaModule,
+    MbModule,
   ],
   controllers: [AppController], // 控制器，只能被注入
   // providers 可以被注入，也能注入到其他对象
   providers: [
     AppService,
+    SaService,
+    SbService,
     // 全局Guard，这种方式可以被注入
     // {
     //   provide: "APP_GUARD",
