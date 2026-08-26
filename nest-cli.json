@@ -27,6 +27,15 @@
         "tsConfigPath": "apps/fastify-test/tsconfig.app.json"
       }
     },
+    "middleware-test": {
+      "type": "application",
+      "root": "apps/middleware-test",
+      "entryFile": "main",
+      "sourceRoot": "apps/middleware-test/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/middleware-test/tsconfig.app.json"
+      }
+    },
     "playground": {
       "type": "application",
       "root": "apps/playground",
