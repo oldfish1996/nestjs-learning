@@ -3,6 +3,9 @@
   "rootDir": ".",
   "testEnvironment": "node",
   "testRegex": ".e2e-spec.ts$",
+  "moduleNameMapper": {
+    "^chalk$": "<rootDir>/mocks/chalk.ts"
+  },
   "transform": {
     "^.+\\.(t|j)s$": "ts-jest"
   }

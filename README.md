@@ -2,13 +2,14 @@
 
 > 参考文档 https://my.feishu.cn/wiki/IET2wHzraiqvD6k6fn8cRbz3nDb
 
-这是一个按学习周组织的 NestJS 教学项目。当前已完成第一周代码：理解项目入口、模块、控制器、服务，以及用内存数组实现基础 REST API。
+这是一个按学习块组织的 NestJS 教学项目。仓库使用 Nest monorepo/workspace 结构：每个学习块是一个独立应用，所有学习块共享根目录依赖，避免每次学习新主题都重新 `nest new`。
 
 ## 当前进度
 
 - 第 1 周：NestJS 基础和项目结构
 - 第 2 周：后续可继续叠加依赖注入和模块系统练习
 - 第 3 周：后续可继续叠加 DTO、ValidationPipe 和自定义 Pipe
+- Dynamic Module：独立学习块，演示 `register()`、`registerAsync()` 和 `@Global()`
 
 ## 启动
 
@@ -33,17 +34,52 @@ DELETE http://localhost:3000/users/1
 ## 第一周目录
 
 ```txt
-src/
-  app.controller.ts
-  app.module.ts
-  app.service.ts
-  main.ts
-  users/
-    users.controller.ts
-    users.module.ts
-    users.service.ts
-    users.types.ts
+apps/
+  playground/
+    src/
+      app.controller.ts
+      app.module.ts
+      app.service.ts
+      main.ts
+      users/
+        users.controller.ts
+        users.module.ts
+        users.service.ts
+        users.types.ts
+libs/
+  shared/
+    src/
+      index.ts
 ```
+
+## 新增学习块
+
+不要重新 `nest new`。在当前仓库里生成一个新的 app：
+
+```bash
+npx nest g app week-02-di
+npx nest start week-02-di --watch
+```
+
+更多约定见 `docs/learning-blocks.md`。
+
+## Dynamic Module 学习块
+
+```bash
+npm run start:dynamic
+```
+
+启动后访问：
+
+```txt
+GET http://localhost:3001/dynamic/static
+GET http://localhost:3001/dynamic/static/options
+GET http://localhost:3001/dynamic/async
+GET http://localhost:3001/dynamic/async/options
+GET http://localhost:3001/dynamic/diagnostics/request-id
+```
+
+源码入口见 `apps/dynamic-module/README.md`。
 
 ## 学习重点
 

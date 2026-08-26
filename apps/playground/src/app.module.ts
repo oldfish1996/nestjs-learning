@@ -14,10 +14,10 @@ import { ConfigModule } from "./config/config.module";
 import { CommonModule } from "./common/common.module";
 import { LogMiddleware } from "./log.middleware";
 import { LoginGuard } from "./login.guard";
-import { MaModule } from './ma/ma.module';
-import { MbModule } from './mb/mb.module';
-import { SaService } from './sa.service';
-import { SbService } from './sb.service';
+import { MaModule } from "./ma/ma.module";
+import { MbModule } from "./mb/mb.module";
+import { SaService } from "./sa.service";
+import { SbService } from "./sb.service";
 
 @Module({
   imports: [
@@ -51,6 +51,8 @@ import { SbService } from './sb.service';
 })
 export class AppModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {
-    consumer.apply(LogMiddleware).forRoutes({path:'aaa', method: RequestMethod.GET});
+    consumer
+      .apply(LogMiddleware)
+      .forRoutes({ path: "aaa", method: RequestMethod.GET });
   }
 }
