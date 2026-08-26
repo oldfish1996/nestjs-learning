@@ -11,8 +11,12 @@
     "outDir": "./dist",
     "baseUrl": "./",
     "paths": {
-      "@app/*": ["apps/*/src"],
-      "@shared/*": ["libs/shared/src/*"]
+      "@app/*": [
+        "apps/*/src"
+      ],
+      "@shared/*": [
+        "libs/shared/src/*"
+      ]
     },
     "incremental": true,
     "strict": true,

@@ -9,15 +9,6 @@
     "tsConfigPath": "apps/playground/tsconfig.app.json"
   },
   "projects": {
-    "playground": {
-      "type": "application",
-      "root": "apps/playground",
-      "entryFile": "main",
-      "sourceRoot": "apps/playground/src",
-      "compilerOptions": {
-        "tsConfigPath": "apps/playground/tsconfig.app.json"
-      }
-    },
     "dynamic-module": {
       "type": "application",
       "root": "apps/dynamic-module",
@@ -25,6 +16,24 @@
       "sourceRoot": "apps/dynamic-module/src",
       "compilerOptions": {
         "tsConfigPath": "apps/dynamic-module/tsconfig.app.json"
+      }
+    },
+    "fastify-test": {
+      "type": "application",
+      "root": "apps/fastify-test",
+      "entryFile": "main",
+      "sourceRoot": "apps/fastify-test/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/fastify-test/tsconfig.app.json"
+      }
+    },
+    "playground": {
+      "type": "application",
+      "root": "apps/playground",
+      "entryFile": "main",
+      "sourceRoot": "apps/playground/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/playground/tsconfig.app.json"
       }
     }
   }
