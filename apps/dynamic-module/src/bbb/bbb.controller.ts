@@ -1,22 +1,14 @@
 import { Controller, Get, Inject } from "@nestjs/common";
-import {
-  BbbModuleOptions,
-  MODULE_OPTIONS_TOKEN,
-} from "./bbb.module-definition";
+import { MODULE_OPTIONS_TOKEN } from "./bbb.module-definition";
 
-@Controller("/dynamic/bbb")
+@Controller("bbb")
 export class BbbController {
-  constructor(
-    @Inject(MODULE_OPTIONS_TOKEN)
-    private readonly options: BbbModuleOptions,
-  ) {}
+  @Inject(MODULE_OPTIONS_TOKEN)
+  private readonly options: any;
 
   @Get()
-  findAll() {
-    console.log("BBB_OPTIONS:", this.options);
-    return {
-      message: "dynamic-bbb",
-      options: this.options,
-    };
+  hello() {
+    console.log("BbbController options:", this.options);
+    return this.options;
   }
 }

@@ -6,11 +6,9 @@
   "scripts": {
     "build": "nest build playground",
     "build:playground": "nest build playground",
-    "build:dynamic": "nest build dynamic-module",
     "start": "nest start playground",
     "start:dev": "nest start playground --watch",
     "start:playground": "nest start playground --watch",
-    "start:dynamic": "nest start dynamic-module --watch",
     "start:prod": "node dist/apps/playground/main",
     "test": "jest",
     "test:watch": "jest --watch",

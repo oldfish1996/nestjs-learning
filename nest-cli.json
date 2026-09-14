@@ -8,6 +8,9 @@
     "webpack": false,
     "tsConfigPath": "apps/playground/tsconfig.app.json"
   },
+  "generateOptions": {
+    "spec": false
+  },
   "projects": {
     "dynamic-module": {
       "type": "application",
