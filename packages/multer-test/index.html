@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/axios@0.24.0/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <p>单个文件上传</p>
+    <input type="file" id="fileInput" />
+    <hr>
+    <p>多个文件上传</p>
+    <input type="file" id="fileInput2" multiple />
+    <script>
+      const fileInput = document.getElementById("fileInput");
+      const fileInput2 = document.getElementById("fileInput2");
+      fileInput.onchange = async () => {
+        const data = new FormData();
+        data.set("name", "chen");
+        data.set("age", 18);
+        data.set("aaa", fileInput.files[0]);
+        const res = await axios.post("http://localhost:3003/aaa", data);
+        console.log(res);
+      };
+      fileInput2.onchange = async () => {
+        const data = new FormData();
+        data.set("name", "chen");
+        data.set("age", 18);
+        [...fileInput2.files].forEach((file) => {
+          data.append("bbb", file);
+        });
+        const res = await axios.post("http://localhost:3003/bbb", data);
+        console.log(res);
+      };
+    </script>
+  </body>
+</html>

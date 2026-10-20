@@ -39,6 +39,15 @@
         "tsConfigPath": "apps/middleware-test/tsconfig.app.json"
       }
     },
+    "nest-multer": {
+      "type": "application",
+      "root": "apps/nest-multer",
+      "entryFile": "main",
+      "sourceRoot": "apps/nest-multer/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/nest-multer/tsconfig.app.json"
+      }
+    },
     "playground": {
       "type": "application",
       "root": "apps/playground",
