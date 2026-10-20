@@ -47,6 +47,15 @@
       "compilerOptions": {
         "tsConfigPath": "apps/playground/tsconfig.app.json"
       }
+    },
+    "version-test": {
+      "type": "application",
+      "root": "apps/version-test",
+      "entryFile": "main",
+      "sourceRoot": "apps/version-test/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/version-test/tsconfig.app.json"
+      }
     }
   }
 }
