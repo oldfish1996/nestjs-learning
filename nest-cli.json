@@ -12,6 +12,15 @@
     "spec": false
   },
   "projects": {
+    "book-system-backend": {
+      "type": "application",
+      "root": "apps/book-system-backend",
+      "entryFile": "main",
+      "sourceRoot": "apps/book-system-backend/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/book-system-backend/tsconfig.app.json"
+      }
+    },
     "dynamic-module": {
       "type": "application",
       "root": "apps/dynamic-module",
