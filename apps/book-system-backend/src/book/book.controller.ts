@@ -4,6 +4,7 @@ import {
   Post,
   Body,
   // Patch,
+  Query,
   Param,
   Delete,
   Put,
@@ -23,8 +24,8 @@ export class BookController {
   constructor(private readonly bookService: BookService) {}
 
   @Get("list")
-  list() {
-    return this.bookService.list();
+  list(@Query("keyword") keyword: string) {
+    return this.bookService.list(keyword);
   }
 
   @Get(":id")
@@ -56,7 +57,7 @@ export class BookController {
         fileSize: 1024 * 1024 * 5,
       },
       fileFilter: (req, file, cb) => {
-        const extname = path.extname(file.originalname);
+        const extname = path.extname(file.originalname).toLowerCase();
         if ([".jpg", ".jpeg", ".png"].includes(extname)) {
           cb(null, true);
         } else {
@@ -69,7 +70,7 @@ export class BookController {
     }),
   )
   uploadFile(@UploadedFile() file: Express.Multer.File) {
-    console.log("file", file);
-    return file.path;
+    if (!file) throw new BadRequestException("请上传封面文件");
+    return `/uploads/${file.filename}`;
   }
 }

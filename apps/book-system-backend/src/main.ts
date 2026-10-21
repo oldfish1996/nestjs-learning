@@ -2,7 +2,7 @@ import { NestFactory } from "@nestjs/core";
 import { ValidationPipe } from "@nestjs/common";
 import { BookSystemBackendModule } from "./book-system-backend.module";
 import { NestExpressApplication } from "@nestjs/platform-express";
-import { join } from "path";
+import { uploadDirectory } from "./book/my-storage";
 
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(
@@ -14,7 +14,7 @@ async function bootstrap() {
 
   app.enableCors();
 
-  app.useStaticAssets(join(__dirname, "uploads"), {
+  app.useStaticAssets(uploadDirectory, {
     prefix: "/uploads",
   });
 

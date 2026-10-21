@@ -1,0 +1,7 @@
+.book-page { max-width: 1200px; margin: 0 auto; padding: 40px 24px; font-family: Arial, "Microsoft YaHei", sans-serif; }
+.book-page h1 { margin: 0 0 36px; text-align: center; font-size: 40px; }
+.book-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 24px; margin-bottom: 24px; }
+.book-toolbar > .ant-input-search { max-width: 460px; }
+.book-feedback { margin-bottom: 20px; }
+.book-page .ant-table-cell .ant-btn-link { padding-inline: 0; }
+@media (max-width: 600px) { .book-page { padding: 24px 12px; } .book-page h1 { font-size: 30px; } .book-toolbar { flex-wrap: wrap; gap: 16px; } }

@@ -9,9 +9,15 @@ export class BookService {
   @Inject()
   private dbService: DbService;
 
-  async list() {
+  async list(keyword: string) {
     const books: Book[] = await this.dbService.read();
-    return books;
+    if (!keyword) return books;
+    return books.filter(
+      (book) =>
+        book.title.includes(keyword) ||
+        book.author.includes(keyword) ||
+        book.description.includes(keyword),
+    );
   }
 
   async findOne(id: number) {

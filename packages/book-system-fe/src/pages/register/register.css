@@ -1,0 +1,62 @@
+.register-page {
+  --register-label-width: 98px;
+  box-sizing: border-box;
+  width: 618px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 40px 9px 16px;
+  color: #111;
+  font-family: Arial, "Microsoft YaHei", sans-serif;
+}
+
+.register-page h1 {
+  margin: 0 0 34px;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.register-page .register-form .ant-form-item {
+  margin-bottom: 36px;
+}
+
+.register-page .register-form .ant-form-item-row {
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
+.register-page .register-form .ant-form-item-label {
+  width: auto;
+  max-width: var(--register-label-width);
+  padding: 0;
+  text-align: right;
+}
+
+.register-page .register-form .ant-form-item-label > label {
+  height: 46px;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.register-page .register-form .ant-form-item-control {
+  width: auto;
+  min-width: 0;
+}
+
+.register-login {
+  margin: 42px 0 44px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.register-actions .ant-alert {
+  margin-bottom: 16px;
+}
+
+@media (max-width: 480px) {
+  .register-page { --register-label-width: 88px; padding: 32px 8px 16px; }
+  .register-page h1 { font-size: 34px; }
+  .register-page .register-form .ant-form-item-label > label { font-size: 16px; }
+  .register-login { font-size: 18px; }
+}
