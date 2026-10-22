@@ -39,6 +39,15 @@
         "tsConfigPath": "apps/fastify-test/tsconfig.app.json"
       }
     },
+    "large-file-upload": {
+      "type": "application",
+      "root": "apps/large-file-upload",
+      "entryFile": "main",
+      "sourceRoot": "apps/large-file-upload/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/large-file-upload/tsconfig.app.json"
+      }
+    },
     "middleware-test": {
       "type": "application",
       "root": "apps/middleware-test",

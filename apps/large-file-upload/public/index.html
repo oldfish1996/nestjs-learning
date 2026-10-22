@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/axios@0.24.0/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <input id="fileInput" type="file" />
+    <p id="uploadStatus" role="status"></p>
+    <script>
+      const fileInput = document.querySelector("#fileInput");
+
+      const chunkSize = 20 * 1024;
+
+      const uploadStatus = document.querySelector("#uploadStatus");
+
+      fileInput.addEventListener("change", async () => {
+        const file = fileInput.files[0];
+        if (!file) return;
+        if (file.size === 0) {
+          uploadStatus.textContent = "请选择非空文件";
+          return;
+        }
+
+        fileInput.disabled = true;
+
+        const totalChunks = Math.ceil(file.size / chunkSize);
+        try {
+          for (let idx = 0; idx < totalChunks; idx++) {
+            const start = idx * chunkSize;
+            const data = new FormData();
+            data.set("name", file.name + "-" + idx);
+            data.append("files", file.slice(start, start + chunkSize));
+            uploadStatus.textContent = `正在上传分片 ${idx + 1}/${totalChunks}`;
+            await axios.post("http://localhost:3000/upload", data);
+          }
+          uploadStatus.textContent = "分片上传完成，正在合并…";
+          await axios.get("http://localhost:3000/merge", {
+            params: { name: file.name, totalChunks },
+          });
+          uploadStatus.textContent = "文件上传并合并完成";
+        } catch (error) {
+          console.error("上传或合并失败", error);
+          uploadStatus.textContent = `上传或合并失败：${error.response?.data?.message || error.message}`;
+        } finally {
+          fileInput.disabled = false;
+          fileInput.value = "";
+        }
+      });
+    </script>
+  </body>
+</html>
