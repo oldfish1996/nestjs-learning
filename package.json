@@ -24,6 +24,7 @@
     "chalk": "^5.6.2",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.15.1",
+    "dotenv": "^18.0.8",
     "express-session": "^1.19.0",
     "fastify": "^5.12.1",
     "reflect-metadata": "^0.2.2",
