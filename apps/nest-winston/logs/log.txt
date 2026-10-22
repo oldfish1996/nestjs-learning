@@ -1,0 +1,36 @@
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"NestWinstonController {/}:","time":"2026-10-22 22:24:16"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/, GET} route","time":"2026-10-22 22:24:16"}
+{"context":"NestApplication","level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","time":"2026-10-22 22:24:16"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"NestWinstonController {/}:","time":"2026-10-22 22:29:54"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/, GET} route","time":"2026-10-22 22:29:54"}
+{"context":"NestApplication","level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","time":"2026-10-22 22:29:54"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"NestWinstonController {/}:","time":"2026-10-22 22:30:07"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/, GET} route","time":"2026-10-22 22:30:07"}
+{"context":"NestApplication","level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","time":"2026-10-22 22:30:07"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"NestWinstonController {/}:","time":"2026-10-22 22:30:16"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/, GET} route","time":"2026-10-22 22:30:16"}
+{"context":"NestApplication","level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","time":"2026-10-22 22:30:16"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"NestWinstonController {/}:","time":"2026-10-22 22:30:19"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/, GET} route","time":"2026-10-22 22:30:19"}
+{"context":"NestApplication","level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","time":"2026-10-22 22:30:19"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"NestWinstonController {/}:","time":"2026-10-22 22:30:28"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/, GET} route","time":"2026-10-22 22:30:28"}
+{"context":"NestApplication","level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","time":"2026-10-22 22:30:28"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"NestWinstonController {/}:","time":"2026-10-22 22:30:42"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/, GET} route","time":"2026-10-22 22:30:42"}
+{"context":"NestApplication","level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","time":"2026-10-22 22:30:42"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"NestWinstonController {/}:","time":"2026-10-22 22:30:50"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/, GET} route","time":"2026-10-22 22:30:50"}
+{"context":"NestApplication","level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","time":"2026-10-22 22:30:50"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"NestWinstonController {/}:","time":"2026-10-22 22:31:02"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/, GET} route","time":"2026-10-22 22:31:02"}
+{"context":"NestApplication","level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","time":"2026-10-22 22:31:02"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"NestWinstonController {/}:","time":"2026-10-22 22:31:21"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/, GET} route","time":"2026-10-22 22:31:21"}
+{"context":"NestApplication","level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","time":"2026-10-22 22:31:21"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"NestWinstonController {/}:","time":"2026-10-22 22:37:20"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/, GET} route","time":"2026-10-22 22:37:20"}
+{"context":"NestApplication","level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","time":"2026-10-22 22:37:20"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"NestWinstonController {/}:","time":"2026-10-22 22:37:50"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/, GET} route","time":"2026-10-22 22:37:50"}
+{"context":"NestApplication","level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","time":"2026-10-22 22:37:50"}
