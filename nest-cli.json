@@ -92,6 +92,15 @@
       "compilerOptions": {
         "tsConfigPath": "apps/version-test/tsconfig.app.json"
       }
+    },
+    "winston-log-server": {
+      "type": "application",
+      "root": "apps/winston-log-server",
+      "entryFile": "main",
+      "sourceRoot": "apps/winston-log-server/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/winston-log-server/tsconfig.app.json"
+      }
     }
   }
 }
