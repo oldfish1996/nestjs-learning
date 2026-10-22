@@ -57,6 +57,15 @@
         "tsConfigPath": "apps/middleware-test/tsconfig.app.json"
       }
     },
+    "nest-logger": {
+      "type": "application",
+      "root": "apps/nest-logger",
+      "entryFile": "main",
+      "sourceRoot": "apps/nest-logger/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/nest-logger/tsconfig.app.json"
+      }
+    },
     "nest-multer": {
       "type": "application",
       "root": "apps/nest-multer",
