@@ -57,6 +57,15 @@
         "tsConfigPath": "apps/middleware-test/tsconfig.app.json"
       }
     },
+    "nest-docker-test": {
+      "type": "application",
+      "root": "apps/nest-docker-test",
+      "entryFile": "main",
+      "sourceRoot": "apps/nest-docker-test/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/nest-docker-test/tsconfig.app.json"
+      }
+    },
     "nest-logger": {
       "type": "application",
       "root": "apps/nest-logger",

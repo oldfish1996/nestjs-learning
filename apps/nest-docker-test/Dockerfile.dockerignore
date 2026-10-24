@@ -1,0 +1,11 @@
+# 相对于仓库根目录（构建上下文），只包含此应用构建所需的文件。
+**
+!package.json
+!package-lock.json
+!nest-cli.json
+!tsconfig.json
+!apps/
+!apps/nest-docker-test/
+!apps/nest-docker-test/tsconfig.app.json
+!apps/nest-docker-test/src/
+!apps/nest-docker-test/src/**
