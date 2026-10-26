@@ -22,10 +22,13 @@ FROM node:22-bookworm-slim AS runtime
 WORKDIR /app
 ENV NODE_ENV=production
 
+# 在运行阶段安装 PM2；pm2-runtime 会保持前台运行，适用于容器。
+RUN npm install -g pm2@6
+
 COPY --from=build --chown=node:node /app/package.json ./package.json
 COPY --from=build --chown=node:node /app/node_modules ./node_modules
 COPY --from=build --chown=node:node /app/dist/apps/nest-docker-test ./dist
 
 USER node
 EXPOSE 3000
-CMD ["node", "dist/main.js"]
+CMD ["pm2-runtime", "dist/main.js", "--name", "nest-docker-test"]
