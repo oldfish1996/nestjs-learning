@@ -37,3 +37,19 @@
 {"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"NestWinstonController {/}:","time":"2026-10-27 21:49:12"}
 {"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/, GET} route","time":"2026-10-27 21:49:12"}
 {"context":"NestApplication","level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","time":"2026-10-27 21:49:12"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"NestWinstonController {/}:","time":"2026-10-28 23:10:29"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/, GET} route","time":"2026-10-28 23:10:29"}
+{"context":"NestApplication","level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","time":"2026-10-28 23:10:29"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"NestWinstonController {/}:","time":"2026-10-28 23:11:28"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/, GET} route","time":"2026-10-28 23:11:28"}
+{"context":"NestApplication","level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","time":"2026-10-28 23:11:28"}
+{"context":"NestWinstonController","level":"\u001b[32minfo\u001b[39m","message":"getHello","time":"2026-10-28 23:12:01"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"NestWinstonController {/}:","time":"2026-10-28 23:12:13"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/, GET} route","time":"2026-10-28 23:12:13"}
+{"context":"NestApplication","level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","time":"2026-10-28 23:12:13"}
+{"context":"NestWinstonController","level":"\u001b[32minfo\u001b[39m","message":"getHello","time":"2026-10-28 23:12:28"}
+{"context":"NestWinstonController","level":"\u001b[32minfo\u001b[39m","message":"getHello","time":"2026-10-28 23:12:29"}
+{"context":"NestWinstonController","level":"\u001b[32minfo\u001b[39m","message":"getHello","time":"2026-10-28 23:14:20"}
+{"context":"NestWinstonController","level":"\u001b[32minfo\u001b[39m","message":"getHello","time":"2026-10-28 23:14:21"}
+{"context":"NestWinstonController","level":"\u001b[32minfo\u001b[39m","message":"getHello","time":"2026-10-28 23:14:48"}
+{"context":"NestWinstonController","level":"\u001b[32minfo\u001b[39m","message":"getHello","time":"2026-10-28 23:14:49"}

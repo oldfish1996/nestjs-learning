@@ -84,6 +84,15 @@
         "tsConfigPath": "apps/nest-multer/tsconfig.app.json"
       }
     },
+    "nest-typeorm": {
+      "type": "application",
+      "root": "apps/nest-typeorm",
+      "entryFile": "main",
+      "sourceRoot": "apps/nest-typeorm/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/nest-typeorm/tsconfig.app.json"
+      }
+    },
     "nest-winston": {
       "type": "application",
       "root": "apps/nest-winston",
