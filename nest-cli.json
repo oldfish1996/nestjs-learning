@@ -111,6 +111,15 @@
         "tsConfigPath": "apps/playground/tsconfig.app.json"
       }
     },
+    "typeorm-tree-entity": {
+      "type": "application",
+      "root": "apps/typeorm-tree-entity",
+      "entryFile": "main",
+      "sourceRoot": "apps/typeorm-tree-entity/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/typeorm-tree-entity/tsconfig.app.json"
+      }
+    },
     "version-test": {
       "type": "application",
       "root": "apps/version-test",
