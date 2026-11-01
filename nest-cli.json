@@ -93,6 +93,15 @@
         "tsConfigPath": "apps/nest-typeorm/tsconfig.app.json"
       }
     },
+    "nest-typeorm-migration": {
+      "type": "application",
+      "root": "apps/nest-typeorm-migration",
+      "entryFile": "main",
+      "sourceRoot": "apps/nest-typeorm-migration/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/nest-typeorm-migration/tsconfig.app.json"
+      }
+    },
     "nest-winston": {
       "type": "application",
       "root": "apps/nest-winston",
