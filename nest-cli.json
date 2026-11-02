@@ -84,6 +84,15 @@
         "tsConfigPath": "apps/nest-multer/tsconfig.app.json"
       }
     },
+    "nest-redis-test": {
+      "type": "application",
+      "root": "apps/nest-redis-test",
+      "entryFile": "main",
+      "sourceRoot": "apps/nest-redis-test/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/nest-redis-test/tsconfig.app.json"
+      }
+    },
     "nest-typeorm": {
       "type": "application",
       "root": "apps/nest-typeorm",
