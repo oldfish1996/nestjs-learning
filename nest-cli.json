@@ -138,6 +138,15 @@
         "tsConfigPath": "apps/playground/tsconfig.app.json"
       }
     },
+    "register-login": {
+      "type": "application",
+      "root": "apps/register-login",
+      "entryFile": "main",
+      "sourceRoot": "apps/register-login/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/register-login/tsconfig.app.json"
+      }
+    },
     "typeorm-tree-entity": {
       "type": "application",
       "root": "apps/typeorm-tree-entity",
