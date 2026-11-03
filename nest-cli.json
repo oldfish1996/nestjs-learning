@@ -66,6 +66,15 @@
         "tsConfigPath": "apps/nest-docker-test/tsconfig.app.json"
       }
     },
+    "nest-jwt": {
+      "type": "application",
+      "root": "apps/nest-jwt",
+      "entryFile": "main",
+      "sourceRoot": "apps/nest-jwt/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/nest-jwt/tsconfig.app.json"
+      }
+    },
     "nest-logger": {
       "type": "application",
       "root": "apps/nest-logger",
