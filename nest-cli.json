@@ -147,6 +147,15 @@
         "tsConfigPath": "apps/playground/tsconfig.app.json"
       }
     },
+    "rbac": {
+      "type": "application",
+      "root": "apps/rbac",
+      "entryFile": "main",
+      "sourceRoot": "apps/rbac/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/rbac/tsconfig.app.json"
+      }
+    },
     "register-login": {
       "type": "application",
       "root": "apps/register-login",
