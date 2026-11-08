@@ -12,6 +12,15 @@
     "spec": false
   },
   "projects": {
+    "access_token_and_refresh_token": {
+      "type": "application",
+      "root": "apps/access_token_and_refresh_token",
+      "entryFile": "main",
+      "sourceRoot": "apps/access_token_and_refresh_token/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/access_token_and_refresh_token/tsconfig.app.json"
+      }
+    },
     "acl-test": {
       "type": "application",
       "root": "apps/acl-test",
