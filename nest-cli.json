@@ -147,6 +147,15 @@
         "tsConfigPath": "apps/nest-winston/tsconfig.app.json"
       }
     },
+    "passport": {
+      "type": "application",
+      "root": "apps/passport",
+      "entryFile": "main",
+      "sourceRoot": "apps/passport/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/passport/tsconfig.app.json"
+      }
+    },
     "playground": {
       "type": "application",
       "root": "apps/playground",
