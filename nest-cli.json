@@ -57,6 +57,24 @@
         "tsConfigPath": "apps/fastify-test/tsconfig.app.json"
       }
     },
+    "github-login": {
+      "type": "application",
+      "root": "apps/github-login",
+      "entryFile": "main",
+      "sourceRoot": "apps/github-login/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/github-login/tsconfig.app.json"
+      }
+    },
+    "google-login": {
+      "type": "application",
+      "root": "apps/google-login",
+      "entryFile": "main",
+      "sourceRoot": "apps/google-login/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/google-login/tsconfig.app.json"
+      }
+    },
     "large-file-upload": {
       "type": "application",
       "root": "apps/large-file-upload",
