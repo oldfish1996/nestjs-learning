@@ -8,6 +8,8 @@ services:
       - redis-container
     ports:
       - "3000:3000"
+    networks:
+      - common-network
   mysql-container:
     image: mysql
     ports:
@@ -15,7 +17,14 @@ services:
     environment:
       MYSQL_DATABASE: docker-compose
       MYSQL_ROOT_PASSWORD: admin
+    networks:
+      - common-network
   redis-container:
     image: redis
     ports:
       - "6379:6379"
+    networks:
+      - common-network
+networks:
+  common-network:
+    driver: bridge

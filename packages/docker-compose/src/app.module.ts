@@ -10,7 +10,9 @@ import { Aaa } from "./aaa/entities/aaa.entity";
   imports: [
     TypeOrmModule.forRoot({
       type: "mysql",
-      host: "192.168.1.3",
+      // host: "localhost",
+      // host: "192.168.1.3",
+      host: "mysql-container",
       port: 3306,
       username: "root",
       password: "admin",
@@ -29,7 +31,9 @@ import { Aaa } from "./aaa/entities/aaa.entity";
       async useFactory() {
         const client = createClient({
           socket: {
-            host: "192.168.1.3",
+            // host: "localhost",
+            // host: "192.168.1.3",
+            host: "redis-container",
             port: 6379,
           },
         });
