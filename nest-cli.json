@@ -165,6 +165,15 @@
         "tsConfigPath": "apps/nest-winston/tsconfig.app.json"
       }
     },
+    "nginx-test": {
+      "type": "application",
+      "root": "apps/nginx-test",
+      "entryFile": "main",
+      "sourceRoot": "apps/nginx-test/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/nginx-test/tsconfig.app.json"
+      }
+    },
     "passport": {
       "type": "application",
       "root": "apps/passport",
