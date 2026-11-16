@@ -201,6 +201,15 @@
         "tsConfigPath": "apps/rbac/tsconfig.app.json"
       }
     },
+    "redis-session": {
+      "type": "application",
+      "root": "apps/redis-session",
+      "entryFile": "main",
+      "sourceRoot": "apps/redis-session/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/redis-session/tsconfig.app.json"
+      }
+    },
     "register-login": {
       "type": "application",
       "root": "apps/register-login",
