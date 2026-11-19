@@ -93,6 +93,15 @@
         "tsConfigPath": "apps/middleware-test/tsconfig.app.json"
       }
     },
+    "nearby-search": {
+      "type": "application",
+      "root": "apps/nearby-search",
+      "entryFile": "main",
+      "sourceRoot": "apps/nearby-search/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/nearby-search/tsconfig.app.json"
+      }
+    },
     "nest-docker-test": {
       "type": "application",
       "root": "apps/nest-docker-test",

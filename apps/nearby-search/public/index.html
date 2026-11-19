@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, user-scalable=no, width=device-width"
+    />
+    <title>附近的充电宝</title>
+    <link
+      rel="stylesheet"
+      href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css"
+    />
+    <script src="https://cache.amap.com/lbs/static/es5.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cache.amap.com/lbs/static/addToolbar.js"
+    ></script>
+    <style>
+      html,
+      body,
+      #container {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+    <script src="https://webapi.amap.com/maps?v=2.0&key=472dc4da8e771024fcf870a79bd1ba96"></script>
+    <script src="https://unpkg.com/axios@1.5.1/dist/axios.min.js"></script>
+    <script>
+      var map = new AMap.Map("container", {
+        resizeEnable: true,
+        zoom: 6,
+        center: [121.399975, 31.161958],
+      });
+
+      // var marker = new AMap.Marker({
+      //   icon: "https://webapi.amap.com/theme/v1.3/markers/n/mark_b.png",
+      //   position: [121.419002, 31.157108],
+      //   anchor: "bottom-center",
+      // });
+
+      // var marker2 = new AMap.Marker({
+      //   icon: "https://webapi.amap.com/theme/v1.3/markers/n/mark_b.png",
+      //   position: [121.41797, 31.165331],
+      //   anchor: "bottom-center",
+      // });
+
+      var circle = new AMap.Circle({
+        center: new AMap.LngLat(121.399975, 31.161958), // 圆心位置
+        radius: 5000,
+        strokeColor: "#F33", //线颜色
+        strokeOpacity: 1, //线透明度
+        strokeWeight: 3, //线粗细度
+        fillColor: "#ee2200", //填充颜色
+        fillOpacity: 0.35, //填充透明度
+      });
+
+      axios
+        .get("/nearbySearch", {
+          params: {
+            longitude: 121.416405,
+            latitude: 31.16791,
+            radius: 100,
+          },
+        })
+        .then((res) => {
+          const data = res.data;
+          console.log(data);
+          data.forEach((item) => {
+            map.add(
+              new AMap.Marker({
+                icon: "https://webapi.amap.com/theme/v1.3/markers/n/mark_b.png",
+                position: [item.longitude, item.latitude],
+                anchor: "bottom-center",
+              }),
+            );
+          });
+        });
+
+      // map.add(marker);
+      // map.add(marker2);
+      map.add(circle);
+
+      map.setFitView();
+    </script>
+  </body>
+</html>
