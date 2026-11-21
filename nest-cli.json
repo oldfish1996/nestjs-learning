@@ -237,6 +237,15 @@
         "tsConfigPath": "apps/single_token_refresh/tsconfig.app.json"
       }
     },
+    "swagger-test": {
+      "type": "application",
+      "root": "apps/swagger-test",
+      "entryFile": "main",
+      "sourceRoot": "apps/swagger-test/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/swagger-test/tsconfig.app.json"
+      }
+    },
     "typeorm-tree-entity": {
       "type": "application",
       "root": "apps/typeorm-tree-entity",
