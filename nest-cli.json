@@ -39,6 +39,15 @@
         "tsConfigPath": "apps/book-system-backend/tsconfig.app.json"
       }
     },
+    "dto-vo": {
+      "type": "application",
+      "root": "apps/dto-vo",
+      "entryFile": "main",
+      "sourceRoot": "apps/dto-vo/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/dto-vo/tsconfig.app.json"
+      }
+    },
     "dynamic-module": {
       "type": "application",
       "root": "apps/dynamic-module",
