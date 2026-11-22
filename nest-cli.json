@@ -273,6 +273,15 @@
         "tsConfigPath": "apps/version-test/tsconfig.app.json"
       }
     },
+    "vo-test": {
+      "type": "application",
+      "root": "apps/vo-test",
+      "entryFile": "main",
+      "sourceRoot": "apps/vo-test/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/vo-test/tsconfig.app.json"
+      }
+    },
     "winston-log-server": {
       "type": "application",
       "root": "apps/winston-log-server",
