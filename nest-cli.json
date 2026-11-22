@@ -237,6 +237,15 @@
         "tsConfigPath": "apps/register-login/tsconfig.app.json"
       }
     },
+    "serializer-interceptor": {
+      "type": "application",
+      "root": "apps/serializer-interceptor",
+      "entryFile": "main",
+      "sourceRoot": "apps/serializer-interceptor/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/serializer-interceptor/tsconfig.app.json"
+      }
+    },
     "single_token_refresh": {
       "type": "application",
       "root": "apps/single_token_refresh",
