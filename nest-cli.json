@@ -30,6 +30,15 @@
         "tsConfigPath": "apps/acl-test/tsconfig.app.json"
       }
     },
+    "article-view": {
+      "type": "application",
+      "root": "apps/article-view",
+      "entryFile": "main",
+      "sourceRoot": "apps/article-view/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/article-view/tsconfig.app.json"
+      }
+    },
     "book-system-backend": {
       "type": "application",
       "root": "apps/book-system-backend",
@@ -64,7 +73,9 @@
       "sourceRoot": "apps/email-login-backend/src",
       "compilerOptions": {
         "tsConfigPath": "apps/email-login-backend/tsconfig.app.json",
-        "assets": ["*.env"]
+        "assets": [
+          "*.env"
+        ]
       }
     },
     "fastify-test": {
