@@ -57,6 +57,16 @@
         "tsConfigPath": "apps/dynamic-module/tsconfig.app.json"
       }
     },
+    "email-login-backend": {
+      "type": "application",
+      "root": "apps/email-login-backend",
+      "entryFile": "main",
+      "sourceRoot": "apps/email-login-backend/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/email-login-backend/tsconfig.app.json",
+        "assets": ["*.env"]
+      }
+    },
     "fastify-test": {
       "type": "application",
       "root": "apps/fastify-test",
