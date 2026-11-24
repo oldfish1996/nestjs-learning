@@ -258,6 +258,15 @@
         "tsConfigPath": "apps/register-login/tsconfig.app.json"
       }
     },
+    "schedule-task": {
+      "type": "application",
+      "root": "apps/schedule-task",
+      "entryFile": "main",
+      "sourceRoot": "apps/schedule-task/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/schedule-task/tsconfig.app.json"
+      }
+    },
     "serializer-interceptor": {
       "type": "application",
       "root": "apps/serializer-interceptor",
